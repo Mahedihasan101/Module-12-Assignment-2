@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f8ff;
+}
+/* shared styles */
+.text-primary {
+  color: #e95a08;
+}
+/* header styles */
+header {
+  width: 1140px;
+  margin: 0 auto;
+}
+/* navbar styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+nav img {
+    width: 135px;
+}
+nav ul {
+  display: flex;
+  gap: 48px;
+  font-family: "Inter", sans-serif;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li:last-child {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+nav li a {
+  text-decoration: none;
+  color: #8987a1;
+}
+nav ul img {
+    width: 28px;
+}
+nav .home {
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+}
+/* banner styles */
+.banner {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 280px;
+}
+.banner-left {
+  width: 570px;
+}
+.banner-left h2 {
+  font-family: "Noto Serif", serif;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+.banner-left p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+.banner-right {
+  width: 570px;
+  margin-top: -50px;
+}
+.navbar-mobaile {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  header {
+    width: 393.18px;
+    
+  }
+  .banner {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  .navbar-desktop {
+    display: none;
+  }
+  .navbar-mobaile {
+    display: flex;
+    width: 98%;
+    margin: 13px auto 0;
+  }
+  .banner-right {
+    width: 100%;
+  }
+  .banner-right img {
+    max-width: 405px;
+  }
+  .banner-left {
+    padding: 28px 16px;
+    width: 387px;
+  }
+  .banner-left h2 {
+    font-family: "Noto Serif", serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+    width: 361px;
+  }
+  .banner-left p {
+    font-size: 14px;
+    font-weight: 400;
+    width: fit-content;
+    margin-right: 0;
+  }
+
+  nav img{
+    width: 63px;
+    
+  }
+}
