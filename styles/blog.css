@@ -21,7 +21,7 @@ nav {
   margin-top: 30px;
 }
 nav img {
-    width: 135px;
+  width: 135px;
 }
 nav ul {
   display: flex;
@@ -32,16 +32,16 @@ nav ul li {
   list-style: none;
 }
 nav ul li:last-child {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 nav li a {
   text-decoration: none;
   color: #8987a1;
 }
 nav ul img {
-    width: 28px;
+  width: 28px;
 }
 nav .home {
   color: black;
@@ -79,15 +79,87 @@ nav .home {
 .navbar-mobaile {
   display: none;
 }
+
+/* main styles */
+main {
+  width: 1140px;
+  margin: 0 auto;
+}
+/* section */
+.plants {
+  text-align: center;
+  margin-top: 120px;
+}
+.plants h3 {
+  font-family: "Noto Serif", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000000;
+}
+.plants p {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  width: 888px;
+  text-align: center;
+  margin: 16px auto;
+}
+/* cards styles */
+.flower-cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 20px;
+  margin-top: 50px;
+}
+.card{
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 18px;
+}
+.card-title{
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #111111;
+
+}
+.card-priz{
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+.card button{
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #E95A08;
+  padding: 19px 40px;
+  border:none;
+
+}
+
 @media screen and (max-width: 576px) {
   header {
     width: 393.18px;
-    
   }
   .banner {
     flex-direction: column;
     margin-top: 80px;
   }
+  /* nav ul li:last-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+} */
+ nav ul{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ }
   .navbar-desktop {
     display: none;
   }
@@ -119,8 +191,29 @@ nav .home {
     margin-right: 0;
   }
 
-  nav img{
+  nav img {
     width: 63px;
-    
+  }
+  /* main */
+  main{
+    width: 362px;
+  }
+  .flower-cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card{
+    width: 171px;
+  }
+  .plants{
+    margin-top: 65px;
+  }
+  .plants h3{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .plants p{
+    width: 336px;
+    font-size: 14px;
+    font-weight: 400;
   }
 }
