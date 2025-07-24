@@ -11,11 +11,11 @@ body {
 .text-primary {
   color: #e95a08;
 }
-.width-1{
+.width-1 {
   width: 1140px;
   margin: 0 auto;
 }
-.width-2{
+.width-2 {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -86,8 +86,6 @@ nav .home {
 .navbar-mobaile {
   display: none;
 }
-
-
 
 /* section */
 .plants {
@@ -284,7 +282,6 @@ nav .home {
 .subscribe div div:last-child {
   display: flex;
   gap: 0;
-
 }
 .subscribe h2 {
   font-family: "Noto Serif", serif;
@@ -313,43 +310,44 @@ nav .home {
 }
 
 /* footer section styles */
-.footer-container{
+.footer-container {
   display: flex;
   justify-content: space-around;
   margin: 50px auto;
 }
-.footer-1{
+.footer-1 {
   width: 359px;
 }
-.footer-1 p{
+.footer-1 p {
   font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
 }
-.footer-2{
+.footer-2 {
   display: flex;
   gap: 85px;
-
 }
 
-.anchor-1 ul, .anchor-2 ul{
+.anchor-1 ul,
+.anchor-2 ul {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.anchor-1 li, .anchor-2 li{
-    list-style: none;
+.anchor-1 li,
+.anchor-2 li {
+  list-style: none;
 }
-.anchor-1 a, .anchor-2 a{
+.anchor-1 a,
+.anchor-2 a {
   font-family: "Inter", sans-serif;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 400;
   color: rgba(107, 114, 128, 1);
-  
 }
-.footer-3 img{
+.footer-3 img {
   margin-right: 24px;
 }
 
@@ -390,14 +388,13 @@ nav .home {
     font-family: "Noto Serif", serif;
     font-size: 1.75rem;
     font-weight: bold;
-    width:361px;
+    width: 361px;
   }
   .banner-left p {
     font-size: 14px;
     font-weight: 400;
     width: fit-content;
     width: 360px;
-    
   }
 
   nav img {
@@ -415,7 +412,7 @@ nav .home {
   .card {
     width: 171px;
   }
-  .width-1{
+  .width-1 {
     width: 361px;
   }
   .plants {
@@ -423,7 +420,7 @@ nav .home {
     width: 361px;
     margin-left: 32px;
   }
-  
+
   .plants h3 {
     font-size: 24px;
     font-weight: bold;
@@ -440,7 +437,7 @@ nav .home {
     width: 361px;
     margin-left: 32px;
   }
-  
+
   .flower-lover img {
     margin-right: 0;
     width: 361px;
@@ -462,7 +459,7 @@ nav .home {
     padding: 5px;
   }
   /* plant-cards styles */
-  .latest-deals{
+  .latest-deals {
     width: 393px;
     margin-left: 20px;
   }
@@ -501,24 +498,42 @@ nav .home {
     margin-top: 50px;
   }
   /* subscribe  */
-  .subscribe{
+  .subscribe {
     width: 430px;
     height: 276px;
   }
-  .subscribe h2{
+  .subscribe h2 {
     width: 235px;
     font-size: 20px;
     font-weight: bold;
   }
-  .subscribe input{
+  .subscribe input {
     width: 218px;
     font-size: 1rem;
     font: 400;
   }
-  .subscribe button{
+  .subscribe button {
     width: 103px;
     font-size: 1rem;
     font-weight: 600;
     padding: 19px 12px;
+  }
+  /* footer */
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-1 p{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 16px;
+  }
+  .footer-2 {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .footer-3 {
+    margin-top: 20px;
   }
 }
