@@ -142,6 +142,36 @@ main {
 
 }
 
+/* flower-lover section styles */
+.flower-lover{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;
+}
+.container{
+  width: 540px;
+  margin-left: 60px;
+}
+.flower-lover img{
+  width: 540px;
+  margin-right: 60px;
+}
+.container h3{
+  font-family: "Noto Serif", serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+
+}
+.container ul li{
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 576px) {
   header {
     width: 393.18px;
@@ -215,5 +245,29 @@ main {
     width: 336px;
     font-size: 14px;
     font-weight: 400;
+  }
+  /* flower-lover section  */
+  .flower-lover {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .flower-lover img{
+    margin-right: 0;
+    width: 361px;
+  }
+ .container{
+    margin-left: 0px;
+    width: 355px;
+  }
+  .container h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 18px;
+  }
+  .container ul li{
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px;
   }
 }
