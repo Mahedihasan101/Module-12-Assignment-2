@@ -5,16 +5,21 @@
 }
 body {
   background-color: #f5f8ff;
+  margin-bottom: 5rem;
 }
 /* shared styles */
 .text-primary {
   color: #e95a08;
 }
-/* header styles */
-header {
+.width-1{
   width: 1140px;
   margin: 0 auto;
 }
+.width-2{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 /* navbar styles */
 nav {
   display: flex;
@@ -82,11 +87,8 @@ nav .home {
   display: none;
 }
 
-/* main styles */
-main {
-  width: 1140px;
-  margin: 0 auto;
-}
+
+
 /* section */
 .plants {
   text-align: center;
@@ -204,7 +206,6 @@ main {
 .plant-cards {
   display: flex;
   justify-content: space-between;
-  height: 423px;
   margin-top: 120px;
   color: #ffffff;
 }
@@ -223,13 +224,11 @@ main {
 }
 .plant-card-right {
   width: 753px;
-  height: 423px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.4)),url("../assets/deal-zabo.png");
-    
+  background: linear-gradient(rgba(0, 0, 0, 0.4)),
+    url("../assets/deal-zabo.png");
   border-radius: 22px;
 }
 .plant-card-left {
@@ -273,6 +272,45 @@ main {
   background: linear-gradient(rgba(0, 0, 0, 0.4)), url("../assets/deal-ana.png");
   border-radius: 14px;
 }
+/* subscribe section styles */
+.subscribe {
+  background-image: url("../assets/news-letter-bg.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 533px;
+  margin-top: 120px;
+}
+.subscribe div div:last-child {
+  display: flex;
+  gap: 0;
+
+}
+.subscribe h2 {
+  font-family: "Noto Serif", serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  width: 586px;
+  margin: 23px auto;
+}
+.subscribe input {
+  width: 644px;
+  padding: 16px 20px;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  font-size: 16px;
+}
+.subscribe button {
+  background-color: #e95a08;
+  color: white;
+  padding: 16px 53px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
 
 @media screen and (max-width: 576px) {
   header {
@@ -281,6 +319,7 @@ main {
   .banner {
     flex-direction: column;
     margin-top: 80px;
+    width: 361px;
   }
 
   nav ul {
@@ -293,30 +332,31 @@ main {
   }
   .navbar-mobaile {
     display: flex;
-    width: 98%;
-    margin: 13px auto 0;
+    width: 361px;
+    margin: o auto;
   }
   .banner-right {
     width: 100%;
   }
   .banner-right img {
-    width: 405px;
+    width: 394px;
   }
   .banner-left {
-    padding: 28px 16px;
-    width: 387px;
+    width: 361px;
+    margin-top: 28px;
   }
   .banner-left h2 {
     font-family: "Noto Serif", serif;
     font-size: 1.75rem;
     font-weight: bold;
-    width: 361px;
+    width:361px;
   }
   .banner-left p {
     font-size: 14px;
     font-weight: 400;
     width: fit-content;
-    margin-right: 0;
+    width: 360px;
+    
   }
 
   nav img {
@@ -328,13 +368,21 @@ main {
   }
   .flower-cards {
     grid-template-columns: repeat(2, 1fr);
+    width: 362px;
+    margin-left: 32px;
   }
   .card {
     width: 171px;
   }
+  .width-1{
+    width: 361px;
+  }
   .plants {
     margin-top: 65px;
+    width: 361px;
+    margin-left: 32px;
   }
+  
   .plants h3 {
     font-size: 24px;
     font-weight: bold;
@@ -348,7 +396,10 @@ main {
   .flower-lover {
     flex-direction: column;
     margin-top: 40px;
+    width: 361px;
+    margin-left: 32px;
   }
+  
   .flower-lover img {
     margin-right: 0;
     width: 361px;
@@ -356,11 +407,12 @@ main {
   .container {
     margin-left: 0px;
     width: 355px;
+    margin-left: 32px;
   }
   .container h3 {
     font-size: 24px;
     font-weight: bold;
-    margin-top: 18px;
+    margin-top: 32px;
   }
   .container ul li {
     width: fit-content;
@@ -369,6 +421,10 @@ main {
     padding: 5px;
   }
   /* plant-cards styles */
+  .latest-deals{
+    width: 393px;
+    margin-left: 20px;
+  }
   .latest-deals h3 {
     font-size: 24px;
     font-weight: bold;
@@ -380,13 +436,17 @@ main {
   }
   .plant-cards {
     flex-direction: column;
+    width: 361px;
+    margin-left: 32px;
   }
-  
+
   .plant-card-right {
-    width: 100%;
-    height: auto;
+    width: 367px;
     border-radius: 14px;
     margin-top: 20px;
+  }
+  .plant-card-right {
+    height: 178px;
   }
   .plant-card-right h3 {
     font-size: 20px;
@@ -399,5 +459,25 @@ main {
   .plant-cards {
     margin-top: 50px;
   }
-
+  /* subscribe  */
+  .subscribe{
+    width: 430px;
+    height: 276px;
+  }
+  .subscribe h2{
+    width: 235px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .subscribe input{
+    width: 218px;
+    font-size: 1rem;
+    font: 400;
+  }
+  .subscribe button{
+    width: 103px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 19px 12px;
+  }
 }
