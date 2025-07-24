@@ -312,6 +312,47 @@ nav .home {
   border: none;
 }
 
+/* footer section styles */
+.footer-container{
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+}
+.footer-1{
+  width: 359px;
+}
+.footer-1 p{
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+.footer-2{
+  display: flex;
+  gap: 85px;
+
+}
+
+.anchor-1 ul, .anchor-2 ul{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.anchor-1 li, .anchor-2 li{
+    list-style: none;
+}
+.anchor-1 a, .anchor-2 a{
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(107, 114, 128, 1);
+  
+}
+.footer-3 img{
+  margin-right: 24px;
+}
+
 @media screen and (max-width: 576px) {
   header {
     width: 393.18px;
