@@ -163,8 +163,8 @@ nav .home {
 .flower-lover div img:last-child {
   width: 286px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -130px;
+  right: -130px;
   background: none;
 }
 .container h3 {
@@ -383,6 +383,7 @@ nav .home {
   .banner-left {
     width: 361px;
     margin-top: 28px;
+    margin-left: 16px;
   }
   .banner-left h2 {
     font-family: "Noto Serif", serif;
@@ -431,6 +432,9 @@ nav .home {
     font-weight: 400;
   }
   /* flower-lover section  */
+.flower-lover div img:last-child{
+  display: none;
+}
   .flower-lover {
     flex-direction: column;
     margin-top: 40px;
