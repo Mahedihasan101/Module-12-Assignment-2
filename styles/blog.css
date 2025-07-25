@@ -347,8 +347,14 @@ nav .home {
   font-weight: 400;
   color: rgba(107, 114, 128, 1);
 }
+.footer-3 {
+  display: flex;
+  gap: 24px;
+  justify-content: start;
+  align-items: start;
+}
 .footer-3 img {
-  margin-right: 24px;
+  width: 36px;
 }
 
 @media screen and (max-width: 576px) {
@@ -432,9 +438,9 @@ nav .home {
     font-weight: 400;
   }
   /* flower-lover section  */
-.flower-lover div img:last-child{
-  display: none;
-}
+  .flower-lover div img:last-child {
+    display: none;
+  }
   .flower-lover {
     flex-direction: column;
     margin-top: 40px;
@@ -502,9 +508,12 @@ nav .home {
     margin-top: 50px;
   }
   /* subscribe  */
+
   .subscribe {
     width: 430px;
     height: 276px;
+    background-position: center;
+    background-size: cover;
   }
   .subscribe h2 {
     width: 235px;
@@ -526,7 +535,7 @@ nav .home {
   .footer-container {
     flex-direction: column;
   }
-  .footer-1 p{
+  .footer-1 p {
     font-family: "Inter", sans-serif;
     font-size: 18px;
     font-weight: 400;
